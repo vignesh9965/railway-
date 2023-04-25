@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+<head>
+		<meta name="viewport" content="with=device-width,initial-scale=1.0">
+		<title> The train project </title>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap" rel="stylesheet">
+		<style>
+			      *{
+		margin: 0;
+		padding: 0;
+		box-sizing:border-box;
+		font-family: 'Poppins', sans-serif;
+		}
+		.header{
+			min-height: 100vh;
+			width: 100%;
+			background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(pic1.jpg);
+			background-position:center;
+			background-size:cover;
+			position:relative;
+		}
+		nav{
+			display:flex;
+			padding: 2% 6%;
+			justify-content:space-between;
+			align-items: center;
+		}
+		nav img{
+			width:150px;
+		}
+		.nav-links{
+			flex:1;
+			text-align:right;
+		}
+		.nav-links ul li{
+			list-style:none;
+			display:inline-block;
+			padding:8px 12px;
+			position:relative;
+		}
+		.nav-links ul li a{
+			color:#fff;
+			text-decoration:none;
+			font-size:25px;
+		}
+		.nav-links ul li::after{
+			content:'';
+			width:0%;
+			height: 2px;
+			background: #f44336;
+			display: block;
+			margin: auto;
+			transition: 0.5s;
+		}
+		.nav-links ul li:hover::after{
+			width: 100%;
+		}
+		.sub-menu-1{
+			display:none;
+			overflow: auto;
+		}
+		.nav-links ul li:hover .sub-menu-1
+		{
+			display: block;
+			position: absolute;
+			background: yellow:
+			margin-top: 15%;
+			margin-left: -15px;
+			z-index: 8;
+		}
+		.nav-links ul li:hover .sub-menu-1 > ul
+		{
+			display: block;
+			margin: 10px;
+			z-index: 8;
+		}
+		.nav-links ul li:hover .sub-menu-1 > ul > li
+		{
+			width: 250px;
+			padding: 8px;
+			border-bottom: 1px solid aqua;
+			background: transparent;
+			border-radius:0;
+			text-align:center;
+			position:relative;
+			z-index: 8;
+		}
+		.nav-links ul li:hover .sub-menu-1 ul li:last-child
+		{
+			border-bottom-color:yellow;
+		}
+		.nav-links ul li:hover .sub-menu-1 ul li a:hover
+		{
+			text-decoration:none;
+			color: #b2ff00;
+		}
+		.text-box{
+			width: 90%;
+			color: #fff;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			text-align: center;
+		}
+		.text-box h1{
+			font-size: 62px;
+		}
+		.text-box p{
+			margin: 10px 0 40px;
+			font-size: 14px;
+			color: #fff;
+		}
+		.hero{
+			display: inline-block;
+			text-decoration :none;
+			color: #fff;
+			border: 1px solid #fff;
+			padding: 12px 34px;
+			font-size: 13px;
+			background: transparent;
+			position: relative;
+			cursor: pointer;
+		}
+		
+		</style>
+</head>          
+<body>   
+	<section class="header"> 
+	<nav>
+		<a href="trainproject.html"><img src="logo.png"></a>
+		<div class="nav-links">
+	<ul>
+	<li><a href="https://www.irctc.co.in/nget/train-search" target='_blank'> IRCTC HOME PAGE  &nbsp &nbsp &nbsp</a>
+	
+	<div class="sub-menu-1">
+		<ul>
+			<li><a href="https://www.irctctourism.com/tourpacakage_search?searchKey=&tagType=&tra
+			velType=Domestic&sector=All&bdar=1" target='_blank' > INDIAN TOURISM </a></li>
+			<li><a href="https://www.irctc.co.in/nget/profile/user-registration" target='_blank'> LOGIN OR SIGN UP</a></li>
+			</ul>
+			</div>	
+			</li>	
+	<li><a href="#"> BOOKING TICKETS</a>              
+	<div class="sub-menu-1">
+		<ul>
+			<li><a href="https://www.makemytrip.com/railways/" > MAKE MY TRIP</a></li>
+			<li><a href="https://www.railyatri.in/train-ticket" >RAILYATRI </a></li>
+			<li><a href="https://paytm.com/train-tickets" > PAYTM </a></li>
+			<li><a href="https://www.cleartrip.com/trains" > CLEAR TRIP </A></li>
+			</ul>
+			</div>	
+			</li>
+	<li><a href="#"> PNR STATUS</a>
+	  <div class="sub-menu-1">
+		<ul>
+			<li><a href="http://www.indianrail.gov.in/enquiry/PNR/PnrEnquiry.html?locale=en" TARGET='_TARGET'>PNR ENQUIRY </a></li>
+			<li><a href="http://www.indianrail.gov.in/enquiry/SEAT/SeatAvailability.html?locale=en">SEATS AVAILABILITY </a></li>
+			<li><a href="http://www.indianrail.gov.in/enquiry/FARE/FareEnquiry.html?locale=en"> FARE ENQUIRY</a></li>
+			<li><a href="http://www.indianrail.gov.in/enquiry/SCHEDULE/TrainSchedule.html?locale=en"> TRAIN SCHEDULE</a></li>
+
+			</ul>
+			</div>	
+			</li>
+	</ul>
+	</div>
+	</nav>
+	
+	<div class="text-box">
+			<h1><br><br>WELCOME TO INDIAN RAILWAYS RESERVATION SYSTEM</h1>
+				<p> Indian Railways (IR) is a government agency under the ownership 
+				of Ministry of Railways that operates India's national railway system.<br>
+				It manages the fourth-largest railway network in the world by size,
+				with a route length of 67,956 km (42,226 mi) . </p>
+				<a href="https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id
+				=0,1 " target='_blank'
+				class="hero">CLICK HERE TO VISIT INDIAN RAILSWAYS PAGE</a>
+			</div>
+			</section>
+	
+
+</body>
+</html>
